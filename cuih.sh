@@ -19,14 +19,15 @@ yellow='\e[1;33m'
 trap ctrl_c INT
 ctrl_c() {
 clear
-echo -e $red"[*]> (Ctrl + C ) Detected, Trying To Exit ... "
+echo -e $red"[*] (Ctrl + C ) Detected, Trying To Exit ... "
 sleep 1
 echo ""
-echo -e $yellow"[*]> Thank You For Using My Tools ... "
+echo -e $yellow"[*] Thank You For Using My Tools ... "
 sleep 1
 echo ""
 echo -e $white"[*] Happy Hacking ... "
-read enter
+echo ""
+read -p "Press Enter ..." enter;
 exit
 }
 
@@ -218,7 +219,7 @@ echo -e $blue"
 
  echo ""
  echo -e $cyan"
-  ================================================
+================================================
   TERIMA KASIH SUDAH MENGGUNAKAN TOOLS INI.
   HAPPY HACKING :D
- ================================================ "
+================================================ "
